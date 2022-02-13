@@ -5,7 +5,7 @@ Yi Lin-501900-Im-possibleYi
 
 ## Release
 
-<a href = "http://ec2-18-223-97-39.us-east-2.compute.amazonaws.com/~Yong/fileSharing/login.html">Link</a> to the file sharing website.
+<a href = "http://ec2-18-223-97-39.us-east-2.compute.amazonaws.com/~Yong/fileSharing/login.html">Link</a> to the file sharing website. Codes are waitting for uploading.
 
 ## Login account name:  
 ```
