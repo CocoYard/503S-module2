@@ -14,8 +14,8 @@ washu
 
 ## Glances
 ### File sharing
-<img src="https://github.com/cse330-spring-2022/module2-group-module2-501033-501900/blob/filestream/img/filewebmain.png" width="100%"/>
-<img src="https://github.com/cse330-spring-2022/module2-group-module2-501033-501900/blob/filestream/img/fileweb.png" width="100%"/>
+<img src="https://github.com/CocoYard/503S/blob/main/img/filewebmain.png" width="100%"/>
+<img src="https://github.com/CocoYard/503S/blob/main/img/fileweb.png" width="100%"/>
 
 ### Chat room
 <img src="https://github.com/CocoYard/503S/blob/main/img/chat.png?raw=true" width="100%"/>
