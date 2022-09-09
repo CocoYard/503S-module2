@@ -1,0 +1,304 @@
+
+
+*{margin:0;padding:0;}
+
+.App {  font-family: "Quicksand";  min-height: 400px;}
+
+
+.o-background {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  position: absolute;
+  background-image:
+  linear-gradient(to right top, #8bd0ff, #a4daff, #bbe3ff, #d2edff, #e8f6ff);
+  }
+
+.o-background * {
+  box-sizing: border-box;
+}
+  
+.o-credits {
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;}
+  
+.o-credits a {
+  color: #fff;
+}
+
+.c-player {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);          
+  transform: translateX(-50%);
+  width: 370px; height: 600px;
+  border-radius: 50%;  
+  border-radius: 0 0 2rem 2rem;  
+  padding: 2.5rem 1.8rem .4rem;  
+  box-shadow: inset 0px -300px 180px -100px rgba(255, 255, 255, 0.3), 0px 12px 20px -20px rgba(0, 0, 0, 0.08);
+}
+
+
+.co_listen-box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color:#fff;
+
+    font-size:1.0rem;
+    text-align: center;
+}
+
+.co_listen-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 8px;
+  }
+
+
+.c-player_user {  
+  width: 50px;  
+  height: 50px;  
+  border-radius: 50%;  
+  overflow: hidden;  
+  margin: 0 auto;  
+  box-shadow: 0 8px 16px -6px rgba(16, 16, 16, 0.3);
+}
+
+.c-player_user__images {  
+  width: 50px;  
+  height: 50px; 
+}
+
+.c-player_user__images img + img {  
+  opacity: 0;
+}
+
+
+
+
+.c-player * {  -webkit-tap-highlight-color: transparent;}
+.c-player__picture {  width: 230px;  height: 230px;  border-radius: 50%;  overflow: hidden;  margin: 0 auto;  box-shadow: 0 8px 16px -6px rgba(16, 16, 16, 0.3);}
+.c-player__picture__images {  width: 230px;  height: 230px;  position: relative;}
+.c-player__picture__images img {  position: absolute;  top: 0;  left: 0;  width: 230px;  height: 230px;  -o-object-fit: cover;     object-fit: cover;  max-width: 100%;  opacity: 1;}
+.c-player__details {  color: #fff;  text-align: center;  line-height: 1.3;  margin: 1.3rem 0 1.8rem;  font-size: 1.2rem;}
+.c-player__details strong {  display: block;  font-size: 1.4rem;}
+.c-player__ui {  display: flex;  justify-content: space-between;  flex-wrap: wrap;  align-items: center;  width: 230px;  margin: 0 auto;  position: relative;}
+
+
+/* music player icon css */
+.c-player__ui__seek {  width: 100%;  border-radius: 15px;  overflow: hidden;  height: .4rem;  margin-top: 1.7rem;}
+.c-player__ui__seek__seeker {  height: .5rem;  background: rgba(255, 255, 255, 0.3);  width: 0%;  margin: 0 auto;  border-radius: 15px;}
+.c-player__ui__seek__seeker div {  background: #fff;  width: 0;  height: .5rem;}
+.c-player__ui .o-controls {  position: relative;  width: 40px;  height: 40px;}
+.c-player__ui__play {  width: 40px;  margin: 0;  cursor: pointer;  position: absolute;  top: 0;  left: 0;}
+.c-player__ui__play svg {   width: 40px;  height: 40px; fill: white;}
+/* .c-player__ui__pause {  position: absolute;  top: 50%;  left: 50%;  -webkit-transform: translateX(-50%) translateY(-50%);          transform: translateX(-50%) translateY(-50%);  width: 29px;  height: 29px;  cursor: pointer;} */
+.c-player__ui__pause svg {  width: 40px;  height: 40px; fill: rgba(255, 255, 255, 0.7);}
+.c-player__ui__pause svg + svg {  width: 40px;  height: 40px; fill: white;}
+.c-player__ui__next, .c-player__ui__prev {  height: 25px;  cursor: pointer;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;}
+.c-player__ui__next svg, .c-player__ui__prev svg {  fill: #fff;  width: 25px;  height: 25px;  opacity: .6;}
+.c-player__ui__next svg + svg, .c-player__ui__prev svg + svg {  margin-left: -15px;}
+.c-player__ui__prev {  -webkit-transform: rotate(180deg);          transform: rotate(180deg);}
+.c-player__ui__chat {  -webkit-transform: rotate(270deg);          transform: rotate(270deg);}
+
+
+
+
+/* music menu list */
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* Hamburger line */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fafafa;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger top & bottom line */
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: inherit;
+    height: 2px;
+    width: 100%;
+    z-index: 1;
+  }
+  .menu-wrap .hamburger > div:after {
+    top: -10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate on hover when checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+
+
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #a4daff;
+    height: 100vh;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all var(--menu-speed) ease;
+  }
+  .menu > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+  }
+  .menu ul {
+    list-style: none;
+  }
+  .menu li {
+    padding: 1rem 0;
+  }
+  .menu > div a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  .menu a:hover {
+    color: #c2c4c7;
+    transition: color 0.3s ease-in;
+  }
+  
+  /* Show Menu */
+  .menu-wrap .toggler:checked ~ .menu {
+    opacity: 1;
+    width: 30vw;
+    transition: all var(--menu-speed) ease;
+  }
+  .menu-wrap .toggler:checked ~ .menu > div {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+  }
+  .menu-wrap .toggler:checked ~ .menu > div a {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+  
+
+
+.c-player__user {  width: 30px;  height: 30px;  position: relative;}
+
+
+/* chat-box css */
+:root{--send-bg:#a4dbff98;--send-color:rgb(255, 255, 255);--receive-bg:#ffffff;--receive-text:black;--page-background:white}
+.chat-box-container{
+  margin-left: 80%;
+  margin-right:10px; 
+  float:right;
+  
+}
+.chat-box{ 
+  font-family:"Helvetica Neue",Helvetica,sans-serif;
+  font-size:15px;font-weight:normal;max-width:550px;
+  margin:50px auto;display:flex;
+  flex-direction:column;
+  height: 630px;
+  overflow:scroll;
+
+
+}
+.chat-box p{
+  max-width:255px;
+  word-wrap:break-word;
+  margin-bottom:12px;
+  line-height:24px;
+  position:relative;
+  padding:10px 10px;
+  border-radius:25px}
+p:before,p:after{content:"";position:absolute;bottom:0;height:25px}
+.send{
+  color:var(--send-color);
+  background:var(--send-bg);
+  align-self:flex-end;
+  margin-left: 10%;
+}
+.receive{
+  background:var(--receive-bg);
+  color:rgb(177, 167, 167);
+  align-self:flex-start
+}
+
+
+.test::placeholder {
+  color: #ff0000;
+  opacity: 1;
+}
