@@ -1,5 +1,5 @@
 # CSE 503
-Some projects about _CSE 503S Rapid prototype development and creative programming_ at WashU. It is the first time when I talks to the web development. The most exciting part for this class was not about how useful the software I developed could be, but the great (torturous) time when I made progress with my friend from scratch (spent a lot of time though). In addition, the UI style looks good :)
+Some selected projects about _CSE 503S Rapid prototype development and creative programming_ at WashU on Spring 2022. It is the first time when I talks to the web development. The most exciting part for this class was not about how useful the software I developed could be, but the great (torturous) time when I made progress with my friend from scratch (spent a lot of time though). In addition, the UI style looks good :)
 
 ### File sharing
 <a href = "http://ec2-18-118-253-215.us-east-2.compute.amazonaws.com/~yong/fileSharing/login.html">Link</a> to the file sharing website. 
