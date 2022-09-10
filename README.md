@@ -1,4 +1,4 @@
-# CSE 503
+# CSE 503S
 Some selected projects about _CSE 503S Rapid prototype development and creative programming_ at WashU on Spring 2022. It was the first time when I talked to the web development formally. The most exciting part for this class was not about how useful the software I developed could be, but the great (torturous) time when I made progress from scratch (spent a lot of time though). In addition, the UI style looks good :)
 
 ### File sharing
