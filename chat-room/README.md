@@ -1,7 +1,4 @@
-# CSE330
-Yong Cheng-501033-CocoYard
-
-Yi Lin-501900-Im-possibleYi
+# CSE330/503S
 
 ## Some Notes
 
