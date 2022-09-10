@@ -10,7 +10,6 @@ Yong
 Yi  
 washu  
 ```
-```users.txt``` is under the directory ```/home/Yong```, which cannot be accessed by users.
 
 ## Glances
 ### File sharing
