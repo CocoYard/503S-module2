@@ -1,16 +1,4 @@
-# CSE330
-### Group Infomation
-
-Yong Cheng-501033-CocoYard
-
-Yi Lin-501900-Im-possibleYi
-
-### Calendar Server Test 
-
-[link ](http://ec2-3-137-214-6.us-east-2.compute.amazonaws.com/~paully01/calendar/home.html)to calendar
-
-id 2222
-password 22222222
+# CSE330/503S
 
 ### Creative Part
 
@@ -23,9 +11,7 @@ password 22222222
 ### Database
 ![DataBase](database.png)
 
-
--2: didn't pass W3C test
-
-+2: nice website design
-
-grade: 60/60
+### Glance
+<p align="center">
+<img width="785" alt="Screen Shot 2022-09-10 at 17 13 54" src="https://user-images.githubusercontent.com/93499248/189503520-d661ba3a-22a0-470b-a15a-46df3af0133b.png">
+</p>
