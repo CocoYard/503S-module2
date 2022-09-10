@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {height: 100%;}
+        body { position: relative; height: 100%; background: #fff url(background/bg.jpg) 50% 50% no-repeat; background-size: cover;}
+        p{position: relative; font-size:30px;text-align:center;color:#FFF;padding-top:5px; line-height:6px;}
+        .rec{border:1px solid white; border-radius:5px; background-color:rgba(255,255,255,0.1); width:190px;height:30px; color:#FFF;}
+        </style>
+</head>
+<body>
+    <div id="fileshare">
+        <p>WUSTL File Sharing</p>
+        <form action="checkin.php" method="get">
+        <p><input type="text" name="username" placeholder="Username" style="text-align:center;" class="rec"></p>
+        <p><input type="submit" value="login" style="text-align:center; background-color:#FFF;color:#279ee2;" class="rec"></p>
+        </form>
+    </div>
+</body>
+</html>
